@@ -6,7 +6,7 @@ import FeedbackContext from "../context/FeedbackContext";
 
 function FeedbackForm(){
   const [text, setText] = useState('');
-  const [Rating, setRating] = useState(10)
+  const [Rating, setRating] = useState(+10)
   const [btnDisabled, setBtnDisabled] = useState(true)
   const [messege,setMessage] = useState('')
   const {addFeedback, feedbackEdit, updateFeedback} =useContext(FeedbackContext)
